@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Contatos</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lista de Contatos</h1>
+  </header>
+
+  <section id="todosOsContatos" class="grid-container">
+  </section>
+  <br>
+
+  <main>
+    <section id="adicionar-contatos">
+      <form id="formulario">
+        <h2 id="addContato">Adicionar Contato:</h2>
+        <div>
+          <label for="nome">Nome: </label>
+          <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
+        </div>
+        <br>
+        <div>
+          <label for="numero">Número: </label>
+          <input type="text" id="numero" name="numero" placeholder="Digite o número" required>
+        </div>
+        <br>
+        <div>
+          <label for="email">E-mail: </label>
+          <input type="text" id="email" name="email" placeholder="Digite o e-mail" required>
+        </div>
+        <br>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Lista de Contatos. Projeto da Bárbara da aula 15.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
