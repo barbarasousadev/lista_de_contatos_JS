@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Editar Contato</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -21,15 +22,19 @@
           <label for="nome">Nome: </label>
           <input type="text" id="nome" name="nome" placeholder="Digite o nome" required>
         </div>
+        <br>
         <div>
           <label for="numero">Número: </label>
           <input type="text" id="numero" name="numero" placeholder="Digite o número" required>
         </div>
+        <br>
         <div>
-          <label for="email">Endereço de E-mail: </label>
+          <label for="email">E-mail: </label>
           <input type="text" id="email" name="email" placeholder="Digite o e-mail" required>
         </div>
+        <br>
         <button type="submit">Atualizar</button>
+        <button type="button" onclick="window.location.href='index.html'">Voltar</button>
       </form>
     </section>
   </main>
