@@ -8,7 +8,7 @@ const index = urlParams.get('id')
 
 const listaDeContatos = JSON.parse(localStorage.getItem("listaDeContatos")) || []
 
-// Preencher o formulário com os dados do contato
+
 if (index !== null) {
   const contato = listaDeContatos[index]
   nome.value = contato.nome
