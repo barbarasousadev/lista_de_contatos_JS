@@ -23,13 +23,13 @@ function contatoNaTela() {
     novoEmail.textContent = contatoDaVez.email
 
     const botaoEditar = document.createElement("button")
-    botaoEditar.textContent = "Editar"
+    botaoEditar.innerHTML = '<i class="fas fa-edit"></i>'
     botaoEditar.addEventListener("click", () => {
       window.location.href = `editar.html?id=${index}`
     })
 
     const botaoExcluir = document.createElement("button")
-    botaoExcluir.textContent = "Excluir"
+    botaoExcluir.innerHTML = '<i class="fas fa-trash"></i>'
     botaoExcluir.addEventListener("click", () => excluirContato(index))
 
     novo_card.append(novoNome, novoNumero, novoEmail, botaoEditar, botaoExcluir)
