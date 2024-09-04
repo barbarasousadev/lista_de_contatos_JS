@@ -21,11 +21,17 @@ body {
     padding: 1rem;
   }
   
+  /* Layout de três colunas para telas maiores */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
   .card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin: 1rem 0;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -61,7 +67,6 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    
   }
   
   form h2 {
@@ -69,8 +74,21 @@ body {
   }
   
   label {
-
-    margin: auto;
-    
-
+    display: block;
+    margin-bottom: 0.5rem;
   }
+  
+
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
